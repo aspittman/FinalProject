@@ -7,7 +7,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
-
 import com.affinityapps.mylibrary.JokesLibraryActivity;
 
 
@@ -43,11 +42,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void tellJoke(View view) {
+
         Toast.makeText(this, "derp", Toast.LENGTH_SHORT).show();
+//        Intent myIntent = new Intent(this, JokesLibraryActivity.class);
+//        startActivity(myIntent);
     }
 
-    public void launchLibraryActivity(View view) {
-        Intent myIntent = new Intent(this, JokesLibraryActivity.class);
-        startActivity(myIntent);
-    }
+    
 }
