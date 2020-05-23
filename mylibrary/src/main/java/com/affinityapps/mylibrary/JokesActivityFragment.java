@@ -19,14 +19,14 @@ public class JokesActivityFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_activity_jokes, container, false);
-        Intent intent = getActivity().getIntent();
 
-//        String jokes = intent.getIntExtra("jokes");
-//        TextView textView = view.findViewById(R.id.jokes_textview);
-//        textView.setText(jokes);
+        assert getArguments() != null;
+        String jokes = getArguments().getString("jokesTransfer");
+        TextView textView = view.findViewById(R.id.jokes_textview);
+        textView.setText(jokes);
 
 
-        return inflater.inflate(R.layout.fragment_activity_jokes, container, false);
+        return view;
     }
 
 }
