@@ -1,16 +1,14 @@
-package com.udacity.gradle.builditbigger;
+package com.udacity.gradle.flavors.free;
 
-import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.util.Pair;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
-import com.affinityapps.mylibrary.JokesLibraryActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.udacity.gradle.builditbigger.EndpointsAsyncTask;
+import com.udacity.gradle.builditbigger.R;
 
 
 public class MainActivity extends AppCompatActivity {
