@@ -42,6 +42,15 @@ android {
             applicationId "com.udacity.gradle.flavors.paid"
         }
     }
+
+    sourceSets {
+
+        paid { res.srcDirs = ['src/paid/res', 'src/paid/res/'] }
+
+        free { res.srcDirs = ['src/free/res', 'src/free/res/'] }
+
+    }
+
     packagingOptions {
         exclude 'META-INF/DEPENDENCIES'
     }
