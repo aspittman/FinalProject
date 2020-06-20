@@ -61,10 +61,10 @@ dependencies {
     endpointsServer project(path: ':backend', configuration: 'endpoints')
     implementation project(':mylibrary')
     implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation 'com.google.android.gms:play-services-ads:19.1.0'
     implementation 'com.google.api-client:google-api-client:1.30.9'
     implementation 'com.google.http-client:google-http-client-android:1.35.0'
     implementation 'com.google.code.findbugs:jsr305:3.0.2'
+    freeImplementation 'com.google.android.gms:play-services-ads:19.2.0'
 
     androidTestImplementation 'com.android.support.test:rules:1.0.2'
     androidTestImplementation('androidx.test.espresso:espresso-core:3.2.0', {
