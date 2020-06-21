@@ -3,6 +3,7 @@ package com.udacity.gradle.builditbigger;
 import android.content.Context;
 import android.os.AsyncTask;
 
+import androidx.test.espresso.ViewAssertion;
 import androidx.test.filters.LargeTest;
 import androidx.test.filters.SmallTest;
 import androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner;
@@ -32,11 +33,13 @@ public class AsyncTaskConnectionTest {
 
 
     @Test
-    public void TestAsyncTaskResponse() {
+    public void jokesLoaderTest() {
 
         onView(withId(R.id.tell_joke_button))
-                .check(matches(withText("Tell Joke")));
+                .perform(click());
 
+        onView(withId(R.id.jokes_textview))
+                .check(matches(isDisplayed()));
     }
 }
 
