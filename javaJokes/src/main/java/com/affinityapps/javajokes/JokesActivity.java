@@ -21,10 +21,7 @@ public class JokesActivity {
 
     public String jokesList(){
         Random random = new Random();
-
-        String jokeSelector = jokesList.get(random.nextInt(jokesList.size()));
-
-        return jokeSelector;
+        return jokesList.get(random.nextInt(jokesList.size()));
     }
 }
 
